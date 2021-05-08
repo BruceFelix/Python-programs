@@ -1,0 +1,48 @@
+Foosball Players
+Let's practice our list manipulation. For each question below, try to determine first what the right answer is just by looking at it, and then figure out how to get it in Python.
+
+Suppose this list of foosballers from earlier:
+
+foosballers = [
+  "Mia",
+  "Retta",
+  "Augustine",
+  "Jin",
+  "Waylon",
+  "Alphonso",
+  "Sage",
+  "Hubert",
+  "Raymon",
+  "Rebecca",
+  "Monty",
+  "Glen",
+  "Christi",
+  "Patrice",
+  "Craig",
+  "Dexter",
+  "Wally",
+  "Ian",
+  "Pat"
+]
+1) Get the median player-- That is, the player exactly in the middle of the league (hint: You can get the total number of players with `len(foosballers)` and then divide that number by 2; You may want to use integer division (see: Numbers section) for this calculation).
+
+2) Get the five players in the middle of the league-- That is, in addition to the median player, also get the players two above and the two below.
+
+3) Add a fake player, called "Average Player," to the exact middle of the list, to show clearly who is above and below average.
+
+4) Actually, that's not obvious enough. Find "Average Player," and change their name to uppercase: "AVERAGE PLAYER." That'll stand out.
+
+5) Add five more players with names of your choosing, to the bottom of the list-- They are unranked and we must therefore assume they are terrible.
+
+6) Oh no-- Now "AVERAGE PLAYER" is no longer in the middle! Find a way to fix this. 
+
+7) Five more players show up, but they are ranked. Insert them at the appropriate location:
+
+- Lacy is one spot ahead of Hubert
+
+- Omar is one spot behind Rebecca
+
+- Otto is 8th best in the league
+
+- Chauncey is 10 spots from the bottom of the league
+
