@@ -1,2 +1,2 @@
 # Python-programs
-Grouping python progrsm
+Grouping python programs
