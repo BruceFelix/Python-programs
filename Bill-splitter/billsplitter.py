@@ -9,3 +9,6 @@ totalBill = (billTotal * percentageTip / 100) + billTotal # calculates the total
 amountToBePaidByEachPerson = totalBill/peopleSplittingTheBill #calculates the amount to be paid by each person inclusive the tip
 print("Each person should pay: ")
 print(amountToBePaidByEachPerson)
+"""
+Lets say the bill was 400 and you were 4 people so each person = 100 each
+"""
