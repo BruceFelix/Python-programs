@@ -122,7 +122,5 @@
 5 1 5 25 125
 """
 for i in range(1,6):
-    for i in range(1,6):
-        print(i * i , end="")
-        i=++i 
-        print()
+    print(i**1,i**0,i**1,i**2,i**3 )
+        
