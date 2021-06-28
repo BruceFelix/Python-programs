@@ -1,3 +1,6 @@
+#author Bruce 
+# use GUI to make it fun
+
 import random
 import time
 
