@@ -1,100 +1,102 @@
-# #Exercise: Level 1
-# #1 
-# empty_list = []
+#Exercise: Level 1
+#1 
+empty_list = []
 
-# #2
-# shoes_list = ['Jordan','Timberland', "clarks", 'Gucci','Loafers']
+#2
+shoes_list = ['Jordan','Timberland', "clarks", 'Gucci','Loafers']
 
-# #3
-# print(len(shoes_list))
+#3
+print(len(shoes_list))
 
-# #4
-# print(shoes_list[0],shoes_list[2], shoes_list[-1])
+#4
+print(shoes_list[0],shoes_list[2], shoes_list[-1])
 
-# #5
-# mixed_data_types = ['Bruce', "22", '177cm', 'single', '588-1']
+#5
+mixed_data_types = ['Bruce', "22", '177cm', 'single', '588-01000']
 
-# #6
-# it_companies = ['Facebook', 'Google', 'Microsoft','Apple', "IBM","Oracle", "Amazon"]
+#6
+it_companies = ['Facebook', 'Google', 'Microsoft','Apple', "IBM","Oracle", "Amazon"]
 
-# #7
-# print(it_companies)
+#7
+print(it_companies)
 
-# #8
-# print("The number of IT companies: ",len(it_companies))
+#8
+print("The number of IT companies: ",len(it_companies))
 
-# #9
-# print(it_companies[0],it_companies[3],it_companies[-1])
+#9
+print(it_companies[0],it_companies[3],it_companies[-1])
 
-# #10
-# it_companies[0] = "Huawei"
-# print(it_companies)
+#10
+it_companies[0] = "Huawei"
+print(it_companies)
 
-# #11
-# it_companies.append("Facebook")
-# print(it_companies)
+#11
+it_companies.append("Facebook")
+print(it_companies)
 
-# #12
-# it_companies.insert(4, "Pixer")
-# print(it_companies)
+#12
+it_companies.insert(4, "Pixer")
+print(it_companies)
 
-# #13
-# it_companies[1] = it_companies[1].upper()
-# print(it_companies)
+#13
+it_companies[1] = it_companies[1].upper()
+print(it_companies)
 
-# #14
-# print(("#").join(it_companies))
+#14
+print(("#").join(it_companies))
 
-# #15
-# print("Facebook" in it_companies)
+#15
+print("Facebook" in it_companies)
 
-# #16 
-# it_companies.sort()
-# print(it_companies)
+#16 
+it_companies.sort()
+print(it_companies)
 
-# #17
+#17
 
-# it_companies.reverse()
-# print(it_companies)
+it_companies.reverse()
+print(it_companies)
 
-# #18
-# print(it_companies[0:3])
+#18
+print(it_companies[0:3])
 
-# #19 
-# print(it_companies[-3:])
+#19 
+print(it_companies[-3:])
 
-# #20 
-# middle_company = it_companies[((len(it_companies))//2)]
-# print(middle_company)
+#20 
+middle_company = it_companies[     ((len(it_companies))//2)     ]
+print(middle_company)
 
-# #21
-# it_companies.pop(0)
-# print(it_companies)
+#21
+it_companies.pop(0)
+print(it_companies)
 
-# #22
-# it_companies.pop(((len(it_companies))//2))
+#22
+it_companies.pop(((len(it_companies))//2))
 
-# #23
-# it_companies.pop(-1)
+#23
+it_companies.pop(-1)
+print(it_companies)
 
-# #24
-# it_companies.clear()
+#24
+it_companies.clear()
+print(it_companies)
 
-# #25
-# del it_companies
+#25
+del it_companies
 
-# #26
-# front_end = ['HTML','CSS','JS','React', 'Redux']
-# back_end = ['Node', 'Express', 'MongoDB']
+#26
+front_end = ['HTML','CSS','JS','React', 'Redux']
+back_end = ['Node', 'Express', 'MongoDB']
 
-# combined_list = front_end + back_end
+combined_list = front_end + back_end
 
-# #27
-# copied_list = combined_list.copy()
-# copied_list.append('Redux')
-# copied_list.append('Python')
-# copied_list.append('SQL')
-# print(copied_list)
+#27
+full_stack = combined_list.copy()
+full_stack.append('Python')
+full_stack.append('SQL')
+print(full_stack)
+print(combined_list)
 
 #Exercises: Level 2
 #1
@@ -104,23 +106,28 @@ print('Sorted ages',ages)
 min_value = min(ages)
 max_value = max(ages)
 
-#sum of max and min
-sum_of_max_and_min = min_value + max_value
+# append max and min to ages
+ages.append(min_value)
+ages.append(max_value)
+ages.sort()
+print(ages)
 
 #median
 mid = len(ages)//2
-median_value =  (ages[mid] + ages[~mid])/2
+median_value =  (ages[mid - 1] + ages[~mid])/2
 print(median_value)
 
 #average 
 average = sum(ages)/ len(ages)
+print(average)
 
 #range 
-range_value = range(max_value,min_value)
+# range_value = range(max_value,min_value)
+range_value = max_value - min_value
 print(range_value)
 
 #absolute values 
-print(abs(max_value)> abs(min_value))
+print(abs(min_value - average)> abs(max_value - average))
 
 #middle country
 countries = [
@@ -323,7 +330,7 @@ middle_country = len(countries)//2
 print(countries[middle_country])
 
 #division of countries
-first_half = countries[:middle_country + 1]
+first_half = countries[0:middle_country + 1]
 other_half = countries[middle_country +1:]
 print(len(first_half), len(other_half))
 
