@@ -2,12 +2,12 @@
 dog = {} # or dog = dict()
 
 #2 Adding values to the dog dictionary
-dog['name'] = "Alex"
-dog['Color'] = "Black"
-dog['Breed'] = 'German shephard'
+dog['name'] = "xela"
+dog['color'] = "Black"
+dog['breed'] = 'German shephard'
 dog['legs'] = 'Long spotted white'
 dog['age'] = '12 dog years'
-#print(dog)
+# print(dog)
 
 #3 student dict
 student = {
@@ -24,7 +24,7 @@ student = {
         'code' : '01000'
     }
 }
-print(student)
+# print(student)
 
 #4length of dict
 print(len(student))
@@ -35,7 +35,7 @@ print(type(student['skills']))
 #6 modify the skills values
 student['skills'].append('Touch typing')
 student['skills'].append('Little of js,java,php')
-print(student)
+# print(student)
 
 #7 get keys as list
 print(student.keys())
