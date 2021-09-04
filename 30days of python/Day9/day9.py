@@ -40,7 +40,7 @@ else:
     
 ##Level 2
 #1
-grade = int(input("Enter your grade"))
+grade = int(input("Enter your grade "))
 if grade >= 80 and grade <= 100:
     print("Scored an A")
 elif grade > 69 and grade < 80:
@@ -53,7 +53,8 @@ if grade >=0 and grade < 50:
     print("You scored an F")
 
 #2 seasons
-month = (input("Enter the current month")).upper()
+month = input("Enter the current month ")
+month = month.upper()
 
 if month == "SEPTEMBER" or month == "OCTOBER" or month == "November":
     print("The season is Autumn")
@@ -63,3 +64,48 @@ if month == "MARCH" or month == "APRIL" or month == "MAY":
     print("The season is Spring")
 if month == "JULY" or month == "AUGUST" or month == "JUNE":
     print("The season is Summer")    
+    
+# appending values in a list
+fruits = ['banana', 'orange', 'mango', 'lemon']
+user_input = input("Enter a fruit: ")
+if user_input in fruits:
+    print("That fruit already exist in the list")
+else:
+    fruits.append(user_input)
+    
+#Level 3
+person={
+    'first_name': 'Asabeneh',
+    'last_name': 'Yetayeh',
+    'age': 250,
+    'country': 'Finland',
+    'is_marred': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+}
+if 'skills' in person.keys():
+    print(person['skills'][(len(person['skills']))//2])
+    if 'Python' in person['skills']:
+        print("Yes there is python")
+    else:
+        print("Python does not exist")
+else:
+    print("Key does not exist")
+
+if ['JavaScript', 'React'] == person['skills']:
+    print('He is a front end developer')
+elif ['Node', 'Python', 'MongoDB'] == person['skills']:
+    print('He is a backend developer')
+elif ['Node', 'React', 'MongoDB'] == person['skills']:
+    print('He is a fullstack developer developer')
+
+else:
+    print('unknown title') 
+    
+if person['is_marred'] and person['country'] == "Finland":
+    print(person['first_name'],person['last_name'],'lives in',person['country']+'.','He is married')
+else:
+    print("He is a ghost")
