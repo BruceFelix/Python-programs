@@ -264,7 +264,12 @@ print(countries_with_land_in_their_name)
 #2 reverse the order using loop.
 revesed = []
 my_list = ['banana', 'orange', 'mango', 'lemon']
-for fruit in range(len(my_list)-1,-1,-1):
-    revesed.append(fruit)
+for fruit in my_list:
+    revesed.insert(0,fruit)
 print(revesed)
 
+#3 level 3
+# -->Go to the data folder and use the countries_data.py file.
+#     >What are the total number of languages in the data
+#     >Find the ten most spoken languages from the data
+#     >Find the 10 most populated countries in the world

@@ -45,11 +45,11 @@ if grade >= 80 and grade <= 100:
     print("Scored an A")
 elif grade > 69 and grade < 80:
     print("Scored a B")
-if grade > 59 and grade < 70:
+elif grade > 59 and grade < 70:
     print("Scored an C")
-if grade > 49 and grade < 60:
+elif grade > 49 and grade < 60:
     print("Scored an D")
-if grade >=0 and grade < 50:
+elif grade >=0 and grade < 50:
     print("You scored an F")
 
 #2 seasons
@@ -58,11 +58,11 @@ month = month.upper()
 
 if month == "SEPTEMBER" or month == "OCTOBER" or month == "November":
     print("The season is Autumn")
-if month == "DECEMBER" or month == "JANUARY" or month == "FEBRUARY":
+elif month == "DECEMBER" or month == "JANUARY" or month == "FEBRUARY":
     print("The season is Winter")
-if month == "MARCH" or month == "APRIL" or month == "MAY":
+elif month == "MARCH" or month == "APRIL" or month == "MAY":
     print("The season is Spring")
-if month == "JULY" or month == "AUGUST" or month == "JUNE":
+elif month == "JULY" or month == "AUGUST" or month == "JUNE":
     print("The season is Summer")    
     
 # appending values in a list
@@ -72,6 +72,7 @@ if user_input in fruits:
     print("That fruit already exist in the list")
 else:
     fruits.append(user_input)
+    print(fruits)
     
 #Level 3
 person={
